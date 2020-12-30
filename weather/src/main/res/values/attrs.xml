@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeatherView">
+        <!--温度数字-->
+        <attr name="wv_temp_enable" format="boolean" />
+        <attr name="wv_temp_size" format="dimension" />
+        <attr name="wv_temp_color" format="color" />
+        <!--曲线-->
+        <attr name="wv_line_width" format="dimension" />
+        <attr name="wv_line_color" format="color" />
+        <attr name="wv_line_has_circle" format="boolean" />
+        <!--宽高-->
+        <attr name="wv_item_width" format="dimension" />
+        <attr name="wv_layout_temp_height" format="dimension" />
+        <attr name="wv_layout_top_height" format="dimension" />
+        <attr name="wv_layout_bottom_height" format="dimension" />
+        <!--布局-->
+        <attr name="wv_custom_view" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yzyfdf.weatherview.view.WeatherView
+            android:id="@+id/weather_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:wv_custom_view="com.yzyfdf.weathersample.CustomView"
+            app:wv_item_width="58dp"
+            app:wv_layout_bottom_height="70dp"
+            app:wv_layout_temp_height="200dp"
+            app:wv_layout_top_height="100dp"
+            app:wv_line_color="@color/colorPrimary"
+            app:wv_line_width="2dp"
+            app:wv_temp_size="14sp" />
+
+    </HorizontalScrollView>
+
+</LinearLayout>
