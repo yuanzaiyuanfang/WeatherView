@@ -15,13 +15,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun initData() {
         val extra = listOf(
-//            WeatherBean("周一", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
-//            WeatherBean("周二", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
-//            WeatherBean("周三", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
-//            WeatherBean("周四", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
-//            WeatherBean("周五", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
-//            WeatherBean("周六", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
-//            WeatherBean("周日", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周一", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周二", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周三", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周四", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周五", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周六", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
+            WeatherBean("周日", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
             WeatherBean("周一", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
             WeatherBean("周二", "晴", "多云", R.mipmap.p20, R.mipmap.p55),
             WeatherBean("周三", "晴", "多云", R.mipmap.p20, R.mipmap.p55),

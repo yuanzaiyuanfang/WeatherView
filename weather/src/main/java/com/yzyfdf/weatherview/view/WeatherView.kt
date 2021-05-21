@@ -319,6 +319,7 @@ class WeatherView @JvmOverloads constructor(
     }
 
     fun setData(vararg lists: List<Int>) {
+        dataList.clear()
         val size = lists.map { it.size }.distinct()
         size.size.takeIf {
             it == 1
@@ -331,7 +332,6 @@ class WeatherView @JvmOverloads constructor(
                 tempMin = min
                 tempRange = max - min
                 itemSize = lists[0].size
-                dataList.clear()
                 dataList.addAll(lists.toList())
             } ?: kotlin.run {
                 Toast.makeText(context, "曲线至少3个点", Toast.LENGTH_SHORT).show()
