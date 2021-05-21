@@ -59,8 +59,8 @@ class WeatherView @JvmOverloads constructor(
     private val path = Path()
 
     private val dataList: MutableList<List<Int>> = mutableListOf(
-        listOf(12, 9, 8, 11, 14, 13, 15, 11, 14, 13, 15),
-        listOf(5, 7, 6, 7, 5, 7, 6, 7, 6, 8, 6)
+        listOf(12, 9, 8, 11, 14, 13, 15, 7),
+        listOf(5, 7, 6, 7, 5, 7, 6, 4)
     )//全部数据
     private val extraList: MutableList<Any> = mutableListOf()//附加数据
     private val cpDatas: MutableList<List<PointF>> = mutableListOf()//控制点
@@ -176,6 +176,9 @@ class WeatherView @JvmOverloads constructor(
     }
 
     private fun drawExtra(canvas: Canvas, index: Int) {
+        if (index >= extraList.size) {
+            return//防下标越界
+        }
         customView?.apply {
             if (topLayoutHeight > 0) {
                 drawTop(
